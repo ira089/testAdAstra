@@ -19,9 +19,956 @@
     <link rel="stylesheet" href="doors.css" />
     <link rel="stylesheet" href="form.css" />
     <link rel="stylesheet" href="preloader.css" />
+    <!-- <link rel="stylesheet" href="header.css" /> -->
+    <link rel="stylesheet" href="rainews.css" />
   </head>
   <body style="overflow: initial; padding-right: 0px">
-    <nav class="red-nav">
+    <div class="header-fixed" style="">
+      <rainews-page-updated>
+        <div id="page-updated">
+          <span class="date">14 Ottobre 2024 </span>
+          <span class="hour">Aggiornato alle 14:23</span>
+        </div>
+      </rainews-page-updated>
+      <rainews-header>
+        <div class="overlay-corporate-mask"></div>
+        <header class="header" data-nosnippet="">
+          <button id="skip-to-content" class="sr-only">
+            Vai al contenuto della pagina
+          </button>
+          <div class="main-bar">
+            <button
+              id="menu-open"
+              type="button"
+              class="button"
+              aria-haspopup="dialog"
+              aria-controls="siteMenu"
+              aria-label="Apri il Menu"
+            >
+              <i class="icon-nav"></i>
+            </button>
+            <a id="logo-rainews" href="/">
+              <i class="icon-logo-rainews" aria-label="logo rainews"></i>
+              <span class="hide"> RaiNews </span>
+            </a>
+            <div id="header-menu" class="header-menu">
+              <nav class="header-menu__nav" style="overflow: visible">
+                <ul
+                  class="header-menu__nav__list visible-list"
+                  role="menu"
+                  aria-label="menu principale"
+                >
+                  <li class="header-menu__nav__list__item" data-position="0">
+                    <a class="link" href="/storie/video" role="menuitem"
+                      >Video</a
+                    >
+                  </li>
+                  <li class="header-menu__nav__list__item" data-position="1">
+                    <a class="link" href="/archivio/cronaca" role="menuitem"
+                      >Cronaca</a
+                    >
+                  </li>
+                  <li class="header-menu__nav__list__item" data-position="7">
+                    <button
+                      class="button header-menu__nav__button"
+                      role="menuitem"
+                      aria-haspopup="dialog"
+                      aria-label="apri il menu"
+                    >
+                      …
+                    </button>
+                  </li>
+                </ul>
+                <ul class="header-menu__nav__list hidden-list hide">
+                  <li class="header-menu__nav__list__item" data-position="2">
+                    <a class="link" href="/archivio/esteri" role="menuitem"
+                      >Esteri</a
+                    >
+                  </li>
+                  <li class="header-menu__nav__list__item" data-position="3">
+                    <a class="link" href="/archivio/politica" role="menuitem"
+                      >Politica</a
+                    >
+                  </li>
+                  <li class="header-menu__nav__list__item" data-position="4">
+                    <a class="link" href="/sport" role="menuitem">Sport</a>
+                  </li>
+                  <li class="header-menu__nav__list__item" data-position="5">
+                    <a
+                      class="link"
+                      href="https://www.servizitelevideo.rai.it/televideo/pub/index.jsp"
+                      role="menuitem"
+                      target="_blank"
+                      >Televideo</a
+                    >
+                  </li>
+                  <li class="header-menu__nav__list__item" data-position="6">
+                    <a
+                      class="link"
+                      href="/articoli/2022/05/quel-che-c-da-sapere-dei-referendum-sulla-giustizia-991dee41-613f-4065-b750-d96440745475.html"
+                      role="menuitem"
+                      >Referendum 12 giugno</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-menu__tgr" data-local-choose="header">
+                <rainews-local-choose
+                  region_name=""
+                  region_title=""
+                  context="header"
+                  ><!---->
+                  <div
+                    class="wrapper-local-choose wrapper-local-choose--header"
+                  >
+                    <!--?lit$1978464747$-->
+                    <button
+                      class="button local-choose-button"
+                      aria-haspopup="listbox"
+                      aria-expanded="false"
+                    >
+                      <span><!--?lit$1978464747$-->Redazioni Tgr</span>
+                    </button>
+                  </div>
+                </rainews-local-choose>
+              </div>
+              <div class="header-menu__live">
+                <a class="link" href="/notiziari/rainews24"
+                  >Rai News 24 <span class="live_tag">• LIVE</span></a
+                >
+              </div>
+            </div>
+            <button
+              id="search-open"
+              data-open="searchModal"
+              type="button"
+              class="button"
+              aria-label="cerca nel sito"
+              aria-haspopup="dialog"
+            >
+              <i class="icon-search"></i>
+            </button>
+            <rainews-weather
+              ><!---->
+              <div id="WTwrapper">
+                <!--<a href="/tgr/lit$847635966$/meteo" title="lit$847635966$">-->
+                <div class="weather">
+                  <div class="weather__img-wrapper">
+                    <img
+                      width="32"
+                      height="32"
+                      alt="icona meteo"
+                      src="//www.rai.it/dl/memo/assets/meteo_small/cieloVelato80.png"
+                    />
+                  </div>
+                  <div class="weather__temperatures">
+                    <div class="max"><!--?lit$847635966$-->23°</div>
+                    <div class="min"><!--?lit$847635966$-->13°</div>
+                  </div>
+                </div>
+                <!--</a>-->
+                <div class="locations">
+                  <button
+                    class="locations__toggler dropdown clear button"
+                    type="button"
+                    data-toggle="province-dropdown"
+                    aria-controls="province-dropdown"
+                    data-is-focus="false"
+                    data-yeti-box="province-dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    id="cviwol-dd-anchor"
+                  >
+                    <!--?lit$847635966$-->Roma
+                    <i class="icon-chevron-right"></i>
+                  </button>
+                  <div
+                    class="locations__dropdown dropdown-pane has-position-bottom has-alignment-center"
+                    id="province-dropdown"
+                    data-dropdown="se9py7-dropdown"
+                    data-alignment="center"
+                    data-auto-focus="true"
+                    aria-labelledby="cviwol-dd-anchor"
+                    aria-hidden="true"
+                    data-yeti-box="province-dropdown"
+                    data-resize="province-dropdown"
+                    data-events="resize"
+                  >
+                    <form class="locations__form">
+                      <div class="locations__form__input-wrapper">
+                        <input
+                          type="text"
+                          placeholder="Cerca provincia"
+                          typw="text"
+                        />
+                        <button type="submit">
+                          <i class="icon-search"></i>
+                        </button>
+                      </div>
+                    </form>
+                    <div class="locations__list-wrapper">
+                      <ul class="vertical menu"></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </rainews-weather>
+            <rainews-search-modal basepath=""><!----> </rainews-search-modal>
+            <button
+              id="corporate-menu-toggler"
+              class="corporate-menu-toggler"
+              aria-label="apri menu Corporate"
+              aria-haspopup="dialog"
+              aria-controls="rai-corporate-menu"
+            >
+              <i class="icon-logo-rai"></i>
+            </button>
+          </div>
+          <div class="secondary-bar" style="">
+            <div class="secondary-bar__inner">
+              <nav class="topics" aria-labelledby="topics__title">
+                <span id="topics__title" class="topics__title"
+                  >Temi Caldi<i class="icon-arrow-right"></i
+                ></span>
+                <div class="topics__nav" style="overflow: visible">
+                  <ul class="topics__nav__list visible-list" role="menu">
+                    <li class="topics__nav__list__item" data-position="0">
+                      <a
+                        class="link"
+                        role="menuitem"
+                        href="/tag?Libano%7CTag-4ecbcc86-92b2-417e-ab37-a763ebb4b8df"
+                        target="_blank"
+                        >Il Libano in fiamme</a
+                      >
+                    </li>
+                    <li class="topics__nav__list__item" data-position="1">
+                      <a
+                        class="link"
+                        role="menuitem"
+                        href="/archivio/storie/laguerraisraele-hamas"
+                        >La guerra Israele-Hamas</a
+                      >
+                    </li>
+                    <span class="topics__nav__list__item" data-position="7">
+                      <button
+                        class="topics__nav__button"
+                        aria-haspopup="dialog"
+                        aria-label="apri il menu"
+                      >
+                        …
+                      </button>
+                    </span>
+                  </ul>
+                  <div class="topics__nav__list hidden-list hide">
+                    <li class="topics__nav__list__item" data-position="2">
+                      <a
+                        class="link"
+                        role="menuitem"
+                        href="/archivio/storie/crisirussia-ucraina"
+                        target="_blank"
+                        >La guerra in Ucraina</a
+                      >
+                    </li>
+                    <li class="topics__nav__list__item" data-position="3">
+                      <a
+                        class="link"
+                        role="menuitem"
+                        href="/tag?Jannik%20Sinner%7CTag-ff89ee87-c016-4357-9a86-1efee86b9a45"
+                        target="_blank"
+                        >Jannik Sinner</a
+                      >
+                    </li>
+                    <li class="topics__nav__list__item" data-position="4">
+                      <a
+                        class="link"
+                        role="menuitem"
+                        href="/archivio/storie/usa2024"
+                        target="_blank"
+                        >USA 2024</a
+                      >
+                    </li>
+                    <li class="topics__nav__list__item" data-position="5">
+                      <a
+                        class="link"
+                        role="menuitem"
+                        href="/storie/lacrisidelclima"
+                        target="_blank"
+                        >La crisi del clima</a
+                      >
+                    </li>
+                    <li class="topics__nav__list__item" data-position="6">
+                      <a
+                        class="link"
+                        role="menuitem"
+                        href="/tag?Anno%20scolastico%7CTag-1ccc20d4-536f-4a55-a11e-23719c39dea1"
+                        target="_blank"
+                        >Si torna a scuola</a
+                      >
+                    </li>
+                  </div>
+                </div>
+              </nav>
+              <div class="social">
+                <ul class="social__list" role="menu">
+                  <li class="social__list__item">
+                    <a
+                      href="https://www.facebook.com/RaiNews"
+                      aria-label="Seguici su facebook"
+                      target="_blank"
+                      class="link"
+                      rel="me"
+                      role="menuitem"
+                    >
+                      <i class="icon-facebook" aria-hidden="true"></i>
+                      <span class="hide">Seguici su facebook</span>
+                    </a>
+                  </li>
+                  <li class="social__list__item">
+                    <a
+                      href="https://twitter.com/RaiNews"
+                      aria-label="Seguici su twitter"
+                      target="_blank"
+                      class="link"
+                      rel="me"
+                      role="menuitem"
+                    >
+                      <i class="icon-twitter" aria-hidden="true"></i>
+                      <span class="hide">Seguici su twitter</span>
+                    </a>
+                  </li>
+                  <li class="social__list__item">
+                    <a
+                      href="https://www.instagram.com/rainewsofficial/?hl=it"
+                      aria-label="Seguici su instagram"
+                      target="_blank"
+                      class="link"
+                      rel="me"
+                      role="menuitem"
+                    >
+                      <i class="icon-instagram" aria-hidden="true"></i>
+                      <span class="hide">Seguici su instagram</span>
+                    </a>
+                  </li>
+                  <li class="social__list__item">
+                    <a
+                      href="/rss"
+                      aria-label="Feed rss"
+                      target="_blank"
+                      class="link"
+                      role="menuitem"
+                    >
+                      <i class="icon-feed-rss" aria-hidden="true"></i>
+                      <span class="hide">Vai agli RSS</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <rainews-menu>
+            <nav
+              id="siteMenu"
+              aria-labelledby="site-menu__head__title"
+              class="site-menu"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="site-menu__head">
+                <button
+                  id="site-menu__head__close"
+                  class="site-menu__head__close"
+                  aria-label="Chiudi il menu"
+                >
+                  <span class="icon-close"></span>
+                </button>
+                <div id="site-menu__head__title" class="site-menu__head__title">
+                  Menu
+                </div>
+              </div>
+              <ul
+                class="site-menu__list site-menu__list--first-level"
+                role="menu"
+              >
+                <li class="site-menu__list__item">
+                  <a class="link" href="/" role="menuitem">Home</a>
+                </li>
+                <li
+                  class="site-menu__list__item site-menu__list__item--has-children temicaldi-menu"
+                  style="display: block"
+                >
+                  <button
+                    class="link"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    role="menuitem"
+                  >
+                    Temi Caldi
+                    <span
+                      class="icon icon-chevron-right"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                  <ul
+                    class="site-menu__list site-menu__list--second-level"
+                    role="menu"
+                  >
+                    <li
+                      class="site-menu__list__item site-menu__list__item--back"
+                    >
+                      <button class="link" title="Temi Caldi" role="menuitem">
+                        <span
+                          class="icon icon-arrow-left show-for-small-only"
+                          aria-hidden="true"
+                        ></span
+                        >Temi Caldi
+                      </button>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/tag?Libano%7CTag-4ecbcc86-92b2-417e-ab37-a763ebb4b8df"
+                        role="menuitem"
+                        >Il Libano in fiamme</a
+                      >
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/archivio/storie/laguerraisraele-hamas"
+                        role="menuitem"
+                        >La guerra Israele-Hamas</a
+                      >
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/archivio/storie/crisirussia-ucraina"
+                        role="menuitem"
+                        >La guerra in Ucraina</a
+                      >
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/tag?Jannik%20Sinner%7CTag-ff89ee87-c016-4357-9a86-1efee86b9a45"
+                        role="menuitem"
+                        >Jannik Sinner</a
+                      >
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/archivio/storie/usa2024"
+                        role="menuitem"
+                        >USA 2024</a
+                      >
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/storie/lacrisidelclima"
+                        role="menuitem"
+                        >La crisi del clima</a
+                      >
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/tag?Anno%20scolastico%7CTag-1ccc20d4-536f-4a55-a11e-23719c39dea1"
+                        role="menuitem"
+                        >Si torna a scuola</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="site-menu__list__item--divider" role="separator">
+                  <hr />
+                </li>
+                <li
+                  class="site-menu__list__item site-menu__list__item--has-children"
+                >
+                  <button
+                    class="link"
+                    aria-haspopup="true"
+                    aria-controls="second-level-2"
+                    role="menuitem"
+                    aria-expanded="false"
+                  >
+                    Redazioni Regionali
+                    <span
+                      class="icon icon-chevron-right"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                  <ul
+                    class="site-menu__list site-menu__list--second-level"
+                    id="second-level-2"
+                    role="menu"
+                  >
+                    <li
+                      class="site-menu__list__item site-menu__list__item--back"
+                    >
+                      <button class="link" role="menuitem">
+                        <span
+                          class="icon icon-arrow-left show-for-small-only"
+                          aria-hidden="true"
+                        ></span
+                        >Redazioni Regionali
+                      </button>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/tgr/abruzzo"
+                        role="menuitem"
+                        target="_blank"
+                        >Abruzzo
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/basilicata" role="menuitem"
+                        >Basilicata
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/calabria" role="menuitem"
+                        >Calabria
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/campania" role="menuitem"
+                        >Campania
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/emiliaromagna" role="menuitem"
+                        >Emilia Romagna
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/fvg" role="menuitem"
+                        >Friuli Venezia Giulia
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/fjk" role="menuitem"
+                        >Furlanija Julijska krajina
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/lazio" role="menuitem"
+                        >Lazio
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/liguria/" role="menuitem"
+                        >Liguria
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/lombardia/" role="menuitem"
+                        >Lombardia
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/marche" role="menuitem"
+                        >Marche
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/molise/" role="menuitem"
+                        >Molise
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/piemonte" role="menuitem"
+                        >Piemonte
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/puglia/" role="menuitem"
+                        >Puglia
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/sardegna" role="menuitem"
+                        >Sardegna
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/sicilia/" role="menuitem"
+                        >Sicilia
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/toscana/" role="menuitem"
+                        >Toscana
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/trento/" role="menuitem"
+                        >Trentino - Trento
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/bolzano" role="menuitem"
+                        >Alto Adige - Bolzano
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/tagesschau/" role="menuitem"
+                        >Tagesschau
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/trail/" role="menuitem"
+                        >Trail
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/umbria" role="menuitem"
+                        >Umbria
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/vda" role="menuitem"
+                        >Valle d'Aosta
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/tgr/veneto" role="menuitem"
+                        >Veneto
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  class="site-menu__list__item site-menu__list__item--has-children"
+                >
+                  <button
+                    class="link"
+                    aria-haspopup="true"
+                    aria-controls="second-level-3"
+                    role="menuitem"
+                    aria-expanded="false"
+                  >
+                    Informazione Rai
+                    <span
+                      class="icon icon-chevron-right"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                  <ul
+                    class="site-menu__list site-menu__list--second-level"
+                    id="second-level-3"
+                    role="menu"
+                  >
+                    <li
+                      class="site-menu__list__item site-menu__list__item--back"
+                    >
+                      <button class="link" role="menuitem">
+                        <span
+                          class="icon icon-arrow-left show-for-small-only"
+                          aria-hidden="true"
+                        ></span
+                        >Informazione Rai
+                      </button>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/notiziari/tg1" role="menuitem"
+                        >TG1
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/notiziari/tg2" role="menuitem"
+                        >TG2
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a class="link" href="/notiziari/tg3" role="menuitem"
+                        >TG3
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/notiziari/rainews24"
+                        role="menuitem"
+                        >Rai News 24 live
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="https://www.raisport.rai.it/"
+                        role="menuitem"
+                        target="_blank"
+                        >Rai Sport
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item--divider" role="separator">
+                      <hr />
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/notiziari/gr1"
+                        role="menuitem"
+                        target="_blank"
+                        >GR1
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/notiziari/gr2"
+                        role="menuitem"
+                        target="_blank"
+                        >GR2
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="/notiziari/gr3"
+                        role="menuitem"
+                        target="_blank"
+                        >GR3
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="https://www.raiplaysound.it/grparlamento"
+                        role="menuitem"
+                        target="_blank"
+                        >GR Parlamento
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item--divider" role="separator">
+                      <hr />
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="http://www.servizitelevideo.rai.it/televideo/pub/pagina.jsp?p=400&amp;s=0&amp;r=Nazionale&amp;idmenumain=0&amp;pagetocall=pagina.jsp"
+                        role="menuitem"
+                        target="_blank"
+                        >Pubblica Utilità
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="http://raiparlamento.rai.it/"
+                        role="menuitem"
+                        target="_blank"
+                        >Rai Parlamento
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="http://www.raivaticano.rai.it/dl/portali/site/page/Page-4898a1ce-a504-4146-b7ed-99bc5c8157f4.html"
+                        role="menuitem"
+                        target="_blank"
+                        >Rai Vaticano
+                      </a>
+                    </li>
+                    <li class="site-menu__list__item">
+                      <a
+                        class="link"
+                        href="https://www.servizitelevideo.rai.it/televideo/pub/index.jsp"
+                        role="menuitem"
+                        target="_blank"
+                        >Televideo
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="site-menu__list__item">
+                  <a class="link" href="/storie/glispeciali" role="menuitem"
+                    >Gli speciali</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a class="link" href="/storie/video" role="menuitem">Video</a>
+                </li>
+                <li class="site-menu__list__item">
+                  <a class="link" href="/storie" role="menuitem">Storie</a>
+                </li>
+                <li class="site-menu__list__item">
+                  <a
+                    class="link"
+                    href="/archivio/storie/criminiandmisteri"
+                    role="menuitem"
+                    >crimini&amp;misteri</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a
+                    class="link"
+                    href="/archivio/storie/mappamondi"
+                    role="menuitem"
+                    >MappaMondi</a
+                  >
+                </li>
+                <li class="site-menu__list__item--divider" role="separator">
+                  <hr />
+                </li>
+                <li class="site-menu__list__item">
+                  <a class="link" href="/archivio/ambiente" role="menuitem"
+                    >Ambiente</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a
+                    class="link"
+                    href="/archivio/artiespettacolo"
+                    role="menuitem"
+                    >Arti e spettacolo</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a class="link" href="/archivio/cronaca" role="menuitem"
+                    >Cronaca</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a class="link" href="/archivio/esteri" role="menuitem"
+                    >Esteri</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a
+                    class="link"
+                    href="/archivio/economiaefinanza"
+                    role="menuitem"
+                    >Economia e finanza</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a class="link" href="/archivio/politica" role="menuitem"
+                    >Politica</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a class="link" href="/salute" role="menuitem">Salute</a>
+                </li>
+                <li class="site-menu__list__item">
+                  <a
+                    class="link"
+                    href="/archivio/scienzaetecnologia"
+                    role="menuitem"
+                    >Scienza e tecnologia</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a
+                    class="link"
+                    href="/archivio/societa"
+                    role="menuitem"
+                    target="_blank"
+                    >Società</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a class="link" href="/sport" role="menuitem">Sport</a>
+                </li>
+                <li class="site-menu__list__item">
+                  <a
+                    class="link"
+                    href="/archivio/stilidivitaetempolibero"
+                    role="menuitem"
+                    >Stili di vita e tempo libero</a
+                  >
+                </li>
+                <li class="site-menu__list__item">
+                  <a
+                    class="link"
+                    href="/archivio/viaggieturismo"
+                    role="menuitem"
+                    >Viaggi e turismo</a
+                  >
+                </li>
+                <li class="site-menu__list__item--divider" role="separator">
+                  <hr />
+                </li>
+                <li class="site-menu__list__item">
+                  <a
+                    class="link"
+                    href="/articoli/2021/12/rainewsit-chi-siamo-da5ac2fd-e338-4a3e-9018-8e05182724aa.html"
+                    role="menuitem"
+                    target="_blank"
+                    >Chi siamo</a
+                  >
+                </li>
+              </ul>
+              <div class="social-menu social">
+                <ul class="social__list" role="menu">
+                  <li class="social__list__item">
+                    <a
+                      href="https://www.facebook.com/RaiNews"
+                      aria-label="Seguici su facebook"
+                      target="_blank"
+                      class="link"
+                      rel="me"
+                      role="menuitem"
+                    >
+                      <i class="icon-facebook" aria-hidden="true"></i>
+                      <span class="hide">Seguici su facebook</span>
+                    </a>
+                  </li>
+                  <li class="social__list__item">
+                    <a
+                      href="https://twitter.com/RaiNews"
+                      aria-label="Seguici su twitter"
+                      target="_blank"
+                      class="link"
+                      rel="me"
+                      role="menuitem"
+                    >
+                      <i class="icon-twitter" aria-hidden="true"></i>
+                      <span class="hide">Seguici su twitter</span>
+                    </a>
+                  </li>
+                  <li class="social__list__item">
+                    <a
+                      href="https://www.instagram.com/rainewsofficial/?hl=it"
+                      aria-label="Seguici su instagram"
+                      target="_blank"
+                      class="link"
+                      rel="me"
+                      role="menuitem"
+                    >
+                      <i class="icon-instagram" aria-hidden="true"></i>
+                      <span class="hide">Seguici su instagram</span>
+                    </a>
+                  </li>
+                  <li class="social__list__item">
+                    <a
+                      href="/rss"
+                      aria-label="Feed rss"
+                      target="_blank"
+                      class="link"
+                      role="menuitem"
+                    >
+                      <i class="icon-feed-rss" aria-hidden="true"></i>
+                      <span class="hide">Vai agli RSS</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!----><!--?--></rainews-menu
+          >
+          <div class="mask-overlay"></div>
+        </header>
+        <!----><!--?--></rainews-header
+      >
+    </div>
+
+    <!-- <nav class="red-nav">
       <div class="nav-container">
         <div class="nav-left">
           <div class="nav-logo">
@@ -97,7 +1044,8 @@
           /></a>
         </div>
       </div>
-    </div>
+    </div> -->
+
     <div class="main">
       <div class="main-container">
         <div class="title-main">
